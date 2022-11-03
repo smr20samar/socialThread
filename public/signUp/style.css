@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--bg-color : #000;
+}
+
+body {
+	background-image: url('https://cdn.wallpapersafari.com/68/8/FVlYjH.png') ;
+	color: #fff;
+}
+
+.logo {
+	position: absolute;
+	font-size: 60px;
+    padding: 15px ;
+	font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.signupForm {
+	display: flex;
+	flex-direction: column;
+	
+	width: 65vh;
+
+	padding: 30px;
+	
+	outline: 1px solid #fff;
+	
+	background: var(--bg-color);
+
+	transition: all ease 300ms;
+}
+
+.signupForm:hover {
+
+	box-shadow: 15px 15px #fff;
+}
+
+.signupForm:has(> input:focus) {
+
+	box-shadow: 15px 15px #fff;
+
+}
+
+.signupForm span {
+	font-family: 'Oxygen Mono' , monospace;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.signupForm input {
+	font-size: 24px;
+	padding: 10px;
+	color: inherit;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.signupForm input:focus {
+	outline: none;
+	padding: 11px;
+	border: 1px solid #fff;
+}
+
+.signupLogo {
+	width: 15%;
+	margin-right: 10%;
+}
+
+
+.next {
+	display: flex;
+	justify-content: center;
+	
+	width: 15%;
+	
+	border: 2px solid #fff;
+	padding: 10px;
+	margin-left: auto;
+	
+	transition: all ease 400ms;
+}
+
+.next:hover {
+	box-shadow: 5px 5px #fff;
+	cursor: pointer;
+}
+
+.signupLogo , .logo , .signupForm svg , .signupForm span {
+	user-select: none;
+}

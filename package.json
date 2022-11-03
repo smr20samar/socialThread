@@ -1,0 +1,22 @@
+{
+  "name": "nodejsserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "build": "nexe -i index.js -t win-x64-12.9.1 -o ./bin/index.exe -r './public/*''"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nexe": "^4.0.0-rc.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@angablue/exe": "^1.1.3"
+  }
+}
